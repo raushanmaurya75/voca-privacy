@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Voca AI</title>
+  <meta name="description" content="Privacy Policy for Voca AI Chrome Extension – AI grammar checker, tone fixer and live chat translator." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #030712;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+    }
+    .header-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .brand {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .brand span { color: #adc6ff; }
+
+    /* ── Hero ── */
+    .hero {
+      max-width: 780px;
+      margin: 60px auto 0;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      color: #94a3b8;
+      font-size: 15px;
+    }
+    .updated-badge {
+      display: inline-block;
+      margin-top: 16px;
+      background: rgba(59,130,246,0.12);
+      border: 1px solid rgba(59,130,246,0.25);
+      color: #adc6ff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 999px;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Content ── */
+    .content {
+      max-width: 780px;
+      margin: 48px auto 80px;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    section {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 20px;
+      padding: 32px 36px;
+    }
+
+    section h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    section h2 .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .icon-blue   { background: rgba(59,130,246,0.15); }
+    .icon-purple { background: rgba(124,58,237,0.15); }
+    .icon-green  { background: rgba(34,197,94,0.15); }
+    .icon-orange { background: rgba(249,115,22,0.15); }
+    .icon-red    { background: rgba(239,68,68,0.15); }
+    .icon-teal   { background: rgba(20,184,166,0.15); }
+    .icon-yellow { background: rgba(234,179,8,0.15); }
+
+    p { color: #94a3b8; margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    ul li {
+      color: #94a3b8;
+      padding-left: 22px;
+      position: relative;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #3b82f6;
+    }
+    ul li strong { color: #e2e8f0; }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; margin-top: 12px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th {
+      background: rgba(59,130,246,0.1);
+      color: #adc6ff;
+      font-weight: 600;
+      padding: 10px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    td {
+      padding: 10px 16px;
+      color: #94a3b8;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    .pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .pill-yes  { background: rgba(34,197,94,0.15);  color: #4ade80; }
+    .pill-no   { background: rgba(239,68,68,0.12);  color: #f87171; }
+
+    /* Contact box */
+    .contact-box {
+      background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(124,58,237,0.1));
+      border: 1px solid rgba(59,130,246,0.2);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-top: 12px;
+    }
+    .contact-box a {
+      color: #adc6ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #475569;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-badge"><img src="logo.png" alt="Voca AI Logo" /></div>
+      <div class="brand">Voca <span>AI</span></div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>Privacy Policy</h1>
+    <p>We believe privacy is a right, not a feature. Here's exactly what we collect, why, and how we protect it.</p>
+    <div class="updated-badge">Last updated: June 1, 2025</div>
+  </div>
+
+  <div class="content">
+
+    <!-- 1. Who We Are -->
+    <section>
+      <h2><span class="icon icon-blue">🏢</span> Who We Are</h2>
+      <p>
+        Voca AI ("we", "us", "our") is a Chrome browser extension that provides AI-powered writing assistance — including grammar fixing, tone improvement, live chat translation, and smart reply generation — directly inside any text field on any website.
+      </p>
+      <p>
+        This Privacy Policy explains how we collect, use, and protect information when you install and use the Voca AI Chrome Extension.
+      </p>
+    </section>
+
+    <!-- 2. What We Collect -->
+    <section>
+      <h2><span class="icon icon-purple">📦</span> What Information We Collect</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>What Exactly</th>
+              <th>Collected?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Account Info</strong></td>
+              <td>Email address, display name (provided during sign-up)</td>
+              <td><span class="pill pill-yes">Yes</span></td>
+            </tr>
+            <tr>
+              <td><strong>Auth Token</strong></td>
+              <td>Login session token stored locally in your browser only</td>
+              <td><span class="pill pill-yes">Yes</span></td>
+            </tr>
+            <tr>
+              <td><strong>Preferences</strong></td>
+              <td>Language settings, AI tone preference, country — stored in browser sync storage</td>
+              <td><span class="pill pill-yes">Yes</span></td>
+            </tr>
+            <tr>
+              <td><strong>Usage Counts</strong></td>
+              <td>Number of AI actions used (messages, translations) — used for plan limits</td>
+              <td><span class="pill pill-yes">Yes</span></td>
+            </tr>
+            <tr>
+              <td><strong>Text You Process</strong></td>
+              <td>Text sent to the AI when you click Fix Grammar / Translate / etc.</td>
+              <td><span class="pill pill-yes">Transiently</span></td>
+            </tr>
+            <tr>
+              <td><strong>Feedback</strong></td>
+              <td>Star rating and optional comment if you submit feedback</td>
+              <td><span class="pill pill-yes">Optional</span></td>
+            </tr>
+            <tr>
+              <td><strong>Browsing History</strong></td>
+              <td>Pages you visit, URLs, page content</td>
+              <td><span class="pill pill-no">Never</span></td>
+            </tr>
+            <tr>
+              <td><strong>Keystrokes / Clicks</strong></td>
+              <td>Keystroke logging, mouse tracking, analytics events</td>
+              <td><span class="pill pill-no">Never</span></td>
+            </tr>
+            <tr>
+              <td><strong>Financial Data</strong></td>
+              <td>Credit card numbers, bank details</td>
+              <td><span class="pill pill-no">Never</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 3. How Text is Processed -->
+    <section>
+      <h2><span class="icon icon-green">⚡</span> How Your Text is Processed</h2>
+      <p>
+        When you click an action button (Fix Grammar, Translate, Improve Tone, Write Reply), the text inside the active input field is sent <strong>only at that moment</strong> to our secure backend server for AI processing.
+      </p>
+      <ul>
+        <li><strong>We do not read your text passively.</strong> The extension only accesses text when you explicitly trigger an action.</li>
+        <li><strong>Text is not stored or logged.</strong> It is processed in real-time and the result is returned to you. We do not retain message contents.</li>
+        <li><strong>All requests are authenticated.</strong> Your text is sent alongside your secure auth token to ensure only you can use your account.</li>
+        <li><strong>Transport is encrypted.</strong> All data is sent over HTTPS/TLS.</li>
+      </ul>
+    </section>
+
+    <!-- 4. How We Use Data -->
+    <section>
+      <h2><span class="icon icon-teal">🎯</span> How We Use Your Information</h2>
+      <ul>
+        <li><strong>Account management:</strong> To create and maintain your Voca AI account and keep you logged in.</li>
+        <li><strong>AI processing:</strong> To send your text to our AI model and return the improved result to you.</li>
+        <li><strong>Usage limits:</strong> To track how many AI actions you have used in the current billing period, in accordance with your subscription plan.</li>
+        <li><strong>Preferences:</strong> To remember your language and tone settings so you don't have to reconfigure them each time.</li>
+        <li><strong>Product improvement:</strong> Aggregated, anonymous usage counts (not content) may be used to improve the extension.</li>
+        <li><strong>Feedback:</strong> If you voluntarily submit feedback, we use it to improve the product.</li>
+      </ul>
+      <p style="margin-top: 16px;">
+        We do <strong>not</strong> use your data for advertising, profiling, or any purpose unrelated to providing the Voca AI writing assistant service.
+      </p>
+    </section>
+
+    <!-- 5. Third-Party Services -->
+    <section>
+      <h2><span class="icon icon-orange">🔗</span> Third-Party Services We Use</h2>
+      <ul>
+        <li>
+          <strong>Supabase</strong> — Used for user authentication (sign-up, login, session management). Supabase stores your email address and account metadata. See <a href="https://supabase.com/privacy" target="_blank" style="color:#adc6ff;">Supabase Privacy Policy</a>.
+        </li>
+        <li>
+          <strong>Cloudflare Workers</strong> — Our AI backend runs on Cloudflare's edge network. Text you send for processing passes through Cloudflare's infrastructure. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" style="color:#adc6ff;">Cloudflare Privacy Policy</a>.
+        </li>
+        <li>
+          <strong>Razorpay</strong> — Used to process payments for paid plans. Razorpay handles all payment data directly. We never see or store your card or bank details. See <a href="https://razorpay.com/privacy/" target="_blank" style="color:#adc6ff;">Razorpay Privacy Policy</a>.
+        </li>
+        <li>
+          <strong>Google Fonts</strong> — Used to load the Inter and Outfit typefaces for the extension UI. Google may log the font request. See <a href="https://policies.google.com/privacy" target="_blank" style="color:#adc6ff;">Google Privacy Policy</a>.
+        </li>
+      </ul>
+      <p style="margin-top: 16px;">
+        We do <strong>not</strong> sell, rent, or share your personal data with any third party for marketing or advertising purposes.
+      </p>
+    </section>
+
+    <!-- 6. Data Storage & Security -->
+    <section>
+      <h2><span class="icon icon-yellow">🔒</span> Data Storage & Security</h2>
+      <ul>
+        <li><strong>Auth tokens and preferences</strong> are stored locally in your browser using Chrome's secure <code style="background:rgba(255,255,255,0.08); padding:1px 6px; border-radius:4px; font-size:13px;">chrome.storage</code> API and never transmitted unless needed for an AI request.</li>
+        <li><strong>All communication</strong> between the extension and our servers is encrypted using HTTPS/TLS.</li>
+        <li><strong>Your account password</strong> is never stored by Voca AI — it is handled exclusively by Supabase's authentication system.</li>
+        <li><strong>Session tokens</strong> are automatically refreshed and expire. If you log out, all local tokens are immediately deleted.</li>
+      </ul>
+    </section>
+
+    <!-- 7. Your Rights -->
+    <section>
+      <h2><span class="icon icon-purple">⚖️</span> Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> the personal data we hold about you (email, name, usage counts).</li>
+        <li><strong>Delete</strong> your account and all associated data at any time by contacting us.</li>
+        <li><strong>Correct</strong> inaccurate personal information in your account.</li>
+        <li><strong>Withdraw consent</strong> by uninstalling the extension — this removes all locally stored data immediately.</li>
+        <li><strong>Data portability</strong> — request an export of your account data.</li>
+      </ul>
+      <p style="margin-top: 14px;">To exercise any of these rights, email us at the address in the Contact section below.</p>
+    </section>
+
+    <!-- 8. Children's Privacy -->
+    <section>
+      <h2><span class="icon icon-red">🛡️</span> Children's Privacy</h2>
+      <p>
+        Voca AI is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will promptly delete it.
+      </p>
+    </section>
+
+    <!-- 9. Changes -->
+    <section>
+      <h2><span class="icon icon-teal">📝</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, regulatory, or operational reasons. When we do, we will update the "Last updated" date at the top of this page.
+      </p>
+      <p>
+        Continued use of the extension after changes are posted constitutes your acceptance of the updated policy.
+      </p>
+    </section>
+
+    <!-- 10. Contact -->
+    <section>
+      <h2><span class="icon icon-blue">✉️</span> Contact Us</h2>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please reach out:</p>
+      <div class="contact-box">
+        <p style="color:#e2e8f0; margin:0;"><strong>Voca AI Support</strong><br/>
+        📧 Email: <a href="mailto:tivitji@gmail.com">tivitji@gmail.com</a>
+        </p>
+      </div>
+      <p style="margin-top:14px;">We aim to respond to all privacy-related requests within <strong>7 business days</strong>.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Voca AI. All rights reserved. · <a href="#" style="color:#475569;">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
